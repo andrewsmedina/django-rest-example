@@ -1,0 +1,33 @@
+$ ab http://localhost:8000/api/service/?format=json
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        WSGIServer/0.1
+Server Hostname:        localhost
+Server Port:            8000
+
+Document Path:          /api/service/?format=json
+Document Length:        356 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.004 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Total transferred:      496 bytes
+HTML transferred:       356 bytes
+Requests per second:    235.79 [#/sec] (mean)
+Time per request:       4.241 [ms] (mean)
+Time per request:       4.241 [ms] (mean, across all concurrent requests)
+Transfer rate:          114.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          4    4   0.0      4       4
